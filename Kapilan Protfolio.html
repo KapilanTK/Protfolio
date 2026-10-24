@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of T. Kapilan - Frontend Developer skilled in React.js, JavaScript, HTML, CSS and Bootstrap.">
+    <meta name="theme-color" content="#08040a">
+    <title>Kapilan T | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Kapilan Protfolio.css">
+    <link rel="stylesheet" href="Kapilan Protfolio.js">
+    <link rel="Icon" type="C:\Protfolio\KT Logo.jpeg" href="C:\Protfolio\KT Logo.jpeg">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        document.documentElement.classList.add("js");
+        // If NO2.js fails to load, show all content anyway
+        setTimeout(function () {
+            if (!window.__portfolioReady) document.documentElement.classList.remove("js");
+        }, 2500);
+    </script>
+</head>
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <div class="loader-logo">K<span>T</span><i>.</i></div>
+            <div class="loader-bar"><span id="loader-fill"></span></div>
+            <p class="loader-text">Loading portfolio <b id="loader-pct">0</b>%</p>
+        </div>
+    </div>
+
+    <!-- scroll progress + custom cursor -->
+    <div class="progress" id="progress"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">Kapilan<span></span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certificates</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="pill pill-mobile">Get in touch <span class="pill-arrow"><i class='bx bx-right-arrow-alt'></i></span></a>
+        </nav>
+
+        <a href="#contact" class="pill pill-desktop magnetic">Get in touch <span class="pill-arrow"><i class='bx bx-right-arrow-alt'></i></span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+
+    <main>
+        <!-- ================= HOME ================= -->
+        <section class="home" id="home">
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+
+            <div class="hero-photo" id="hero-photo">
+                <img src="2e74fd31-04a0-49a6-81f4-379e57f575bd.jpeg" alt="Kapilan T">
+            </div>
+
+            <div class="hero-text">
+                <p class="hello">Hey, I'm Kapilan T, a</p>
+                <h1 id="hero-title">Frontend<br>Developer</h1>
+                <p class="typed-line">I build <span class="text"></span></p>
+                <div class="home-sci">
+                    <a href="https://www.linkedin.com/in/kapilan-t-207b1729a" target="_blank" rel="noopener" aria-label="LinkedIn" class="magnetic"><i class='bx bxl-linkedin'></i></a>
+                    <a href="mailto:kapilanthennarasu@gmail.com" aria-label="Email" class="magnetic"><i class='bx bx-envelope'></i></a>
+                    <a href="https://wa.me/919025807084" target="_blank" rel="noopener" aria-label="WhatsApp" class="magnetic"><i class='bx bxl-whatsapp'></i></a>
+                    <!-- Instagram / GitHub link kudutha inga serkalam:
+                    <a href="https://instagram.com/YOUR-ID" target="_blank" rel="noopener" aria-label="Instagram" class="magnetic"><i class='bx bxl-instagram'></i></a> -->
+                </div>
+            </div>
+
+            <div class="hero-tag">
+                <h2>Clean code should<br>feel effortless.</h2>
+                <p>Aspiring Frontend Developer skilled in React.js, JavaScript, HTML, CSS and Bootstrap. I build fast, responsive and maintainable web interfaces.</p>
+                <a href="Kapilan Resume.pdf" download class="btn-line magnetic"><i class='bx bx-download'></i> Download Resume</a>
+            </div>
+
+            <div class="hero-skills">
+                <div><b>#01</b> HTML &amp; CSS</div>
+                <div><b>#02</b> JavaScript</div>
+                <div><b>#03</b> React.js</div>
+                <div><b>#04</b> Bootstrap &amp; Responsive UI</div>
+            </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+        </section>
+
+        <!-- ================= MARQUEE ================= -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>HTML5</span><i class='bx bxs-star'></i><span>CSS3</span><i class='bx bxs-star'></i><span>JavaScript</span><i class='bx bxs-star'></i><span>React.js</span><i class='bx bxs-star'></i><span>Bootstrap</span><i class='bx bxs-star'></i><span>REST APIs</span><i class='bx bxs-star'></i><span>Responsive Design</span><i class='bx bxs-star'></i>
+                <span>HTML5</span><i class='bx bxs-star'></i><span>CSS3</span><i class='bx bxs-star'></i><span>JavaScript</span><i class='bx bxs-star'></i><span>React.js</span><i class='bx bxs-star'></i><span>Bootstrap</span><i class='bx bxs-star'></i><span>REST APIs</span><i class='bx bxs-star'></i><span>Responsive Design</span><i class='bx bxs-star'></i>
+            </div>
+        </div>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section" id="about">
+            <p class="eyebrow reveal" data-scramble>#01 &mdash; About</p>
+            <h2 class="heading reveal">About <span>Me</span></h2>
+
+            <div class="about-wrap">
+                <div class="about-photo reveal">
+                    <div class="photo-frame tilt">
+                        <div class="photo-ring"></div>
+                        <div class="photo-inner">
+                            <img src="WhatsApp Image 2026-10-22 at 7.22.33 PM.jpeg" alt="Kapilan T standing beside his bike" loading="lazy">
+                        </div>
+                        <span class="photo-chip chip-a"><i class='bx bxl-react'></i> React.js</span>
+                        <span class="photo-chip chip-b"><i class='bx bxl-javascript'></i> JavaScript</span>
+                        <span class="photo-chip chip-c"><i class='bx bx-medal'></i> NCC Cadet</span>
+                    </div>
+                </div>
+
+                <div class="about-body">
+                    <div class="about-text reveal">
+                        <h3>Frontend Developer</h3>
+                        <p>Aspiring Frontend Developer skilled in React.js, JavaScript, HTML, CSS, Bootstrap, and modern frontend technologies. Passionate about building fast, scalable, and maintainable web applications with a strong focus on clean code and performance optimization.</p>
+                        <p>Proficient in RESTful API integration, state management, and component-based development. Always eager to learn and implement the latest web technologies.</p>
+                        <a href="#contact" class="pill magnetic">Let's talk <span class="pill-arrow"><i class='bx bx-right-arrow-alt'></i></span></a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat reveal spot tilt"><h4><span data-count="2">2</span></h4><p>Internships</p></div>
+                        <div class="stat reveal spot tilt"><h4><span data-count="3">3</span></h4><p>Projects</p></div>
+                        <div class="stat reveal spot tilt"><h4><span data-count="8">8</span></h4><p>Certificates &amp; Honours</p></div>
+                        <div class="stat reveal spot tilt"><h4><span data-count="2025">2025</span></h4><p>B.E. CSE Graduate</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div id="education" class="edu-block">
+                <h3 class="sub-heading reveal">Education</h3>
+                <div class="timeline" id="timeline">
+                    <span class="tl-line"><span class="tl-fill" id="tl-fill"></span></span>
+                    <div class="tl-item reveal spot">
+                        <span class="tl-date">2021 - 2025</span>
+                        <h3>Bachelor of Engineering - Computer Science and Engineering</h3>
+                        <p>St Xavier's Catholic College of Engineering, Chunkankadai</p>
+                        <strong>CGPA: 6.2</strong>
+                    </div>
+                    <div class="tl-item reveal spot">
+                        <span class="tl-date">2021</span>
+                        <h3>High School - 12th</h3>
+                        <p>Sri Visalakshi Kalasala Higher Secondary School</p>
+                        <strong>Percentage: 76.78%</strong>
+                    </div>
+                    <div class="tl-item reveal spot">
+                        <span class="tl-date">2019</span>
+                        <h3>SSLC - 10th</h3>
+                        <p>Sri Visalakshi Kalasala Higher Secondary School</p>
+                        <strong>Percentage: 62.20%</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section alt" id="skills">
+            <p class="eyebrow reveal" data-scramble>#02 &mdash; Skills</p>
+            <h2 class="heading reveal">My <span>Skills</span></h2>
+
+            <div class="skill-grid">
+                <div class="skill-card reveal spot tilt"><i class='bx bxl-html5'></i><h3>HTML5</h3></div>
+                <div class="skill-card reveal spot tilt"><i class='bx bxl-css3'></i><h3>CSS3</h3></div>
+                <div class="skill-card reveal spot tilt"><i class='bx bxl-javascript'></i><h3>JavaScript</h3></div>
+                <div class="skill-card reveal spot tilt"><i class='bx bxl-react'></i><h3>React.js</h3></div>
+                <div class="skill-card reveal spot tilt"><i class='bx bxl-bootstrap'></i><h3>Bootstrap</h3></div>
+            </div>
+
+            <div class="skill-extra">
+                <div class="skill-box reveal spot">
+                    <h3><i class='bx bx-code-alt'></i> What I Do</h3>
+                    <ul class="chips">
+                        <li>Responsive Web Design</li>
+                        <li>RESTful API Integration</li>
+                        <li>State Management</li>
+                        <li>Component-Based Development</li>
+                        <li>Clean &amp; Maintainable Code</li>
+                    </ul>
+                </div>
+                <div class="skill-box reveal spot">
+                    <h3><i class='bx bx-user-voice'></i> Soft Skills</h3>
+                    <ul class="chips">
+                        <li>Team Work</li>
+                        <li>Time Management</li>
+                        <li>Dedication</li>
+                        <li>Self-motivation</li>
+                        <li>Patience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE ================= -->
+        <section class="section" id="experience">
+            <p class="eyebrow reveal" data-scramble>#03 &mdash; Experience</p>
+            <h2 class="heading reveal">My <span>Internships</span></h2>
+
+            <div class="exp-grid">
+                <article class="exp-card reveal spot tilt">
+                    <div class="exp-head">
+                        <i class='bx bx-briefcase-alt-2'></i>
+                        <div>
+                            <h3>Front End Development</h3>
+                            <span>Alo Infotech</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>Built responsive web pages</b> - mobile-friendly websites using HTML, CSS and Bootstrap with consistent layout across devices.</li>
+                        <li><b>Developed interactive UI components</b> - reusable, dynamic components in React.js, managing state and props for better interaction and efficiency.</li>
+                        <li><b>Implemented styling and layouts</b> - Bootstrap classes and custom CSS for visually appealing, clean and structured layouts.</li>
+                    </ul>
+                </article>
+
+                <article class="exp-card reveal spot tilt">
+                    <div class="exp-head">
+                        <i class='bx bxl-react'></i>
+                        <div>
+                            <h3>React JS</h3>
+                            <span>EXLife Solutions &middot; Jun 17 - Jul 12, 2024</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>React JS development</b> - completed a one-month intensive internship, gaining practical front-end skills with React JS.</li>
+                        <li><b>Hands-on experience and performance</b> - curriculum-based training with excellent performance throughout the program.</li>
+                        <li><b>Industry exposure</b> - refined technical abilities in React JS through dedicated participation in an intensive program.</li>
+                    </ul>
+                    <button type="button" class="doc-link" data-doc="C:\Protfolio\Exlife solution Internship certificate.pdf"><i class='bx bx-file-find'></i> View internship certificate</button>
+                 </article>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="section alt" id="projects">
+            <p class="eyebrow reveal" data-scramble>#04 &mdash; Projects</p>
+            <h2 class="heading reveal">My <span>Projects</span></h2>
+
+            <div class="project-grid">
+                <!-- Final year project -->
+                <article class="project-card featured reveal spot" data-project="fyp" tabindex="0" role="button" aria-label="Open Smart Trolley project">
+                    <span class="project-no">01</span>
+                    <div class="project-cover"><img src="C:\Protfolio\Final year project photo .jpeg" alt="Smart Trolley project report cover" loading="lazy"></div>
+                    <div class="project-info">
+                        <span class="badge">Final Year Project &middot; May 2025</span>
+                        <h3>Smart Trolley with Autocheckout &amp; Theft Detection</h3>
+                        <p>An IoT-based smart trolley that automates supermarket billing using a barcode scanner and weight sensor. Users scan items while shopping, see the total cost in real time and check out without waiting in queues. Theft detection compares the scanned item details with the trolley's weight to prevent unpaid item removal.</p>
+                        <ul class="tags"><li>NodeMCU ESP8266</li><li>Barcode Scanner</li><li>Load Cell</li><li>Blynk</li></ul>
+                        <span class="open-hint">Open project <i class='bx bx-right-arrow-alt'></i></span>
+                    </div>
+                </article>
+
+                <!-- IoT mini project -->
+                <article class="project-card reveal spot" data-project="iot" tabindex="0" role="button" aria-label="Open IoT mini project">
+                    <span class="project-no">02</span>
+                    <div class="project-icon"><i class='bx bx-chip'></i></div>
+                    <span class="badge">IoT Mini Project</span>
+                    <h3>Temperature &amp; Humidity Monitoring System</h3>
+                    <p>Arduino Uno and DHT11 sensor project that reads live temperature and humidity data, with optional IoT cloud monitoring through ThingSpeak or Blynk.</p>
+                    <ul class="tags"><li>Arduino Uno</li><li>DHT11</li><li>IoT</li></ul>
+                    <span class="open-hint">Open project <i class='bx bx-right-arrow-alt'></i></span>
+                </article>
+
+                <!-- Portfolio -->
+                <article class="project-card reveal spot">
+                    <span class="project-no">03</span>
+                    <div class="project-icon"><i class='bx bx-laptop'></i></div>
+                    <span class="badge">Web Project</span>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A personal portfolio website built to showcase projects, technical skills and resume. Designed with a responsive layout and clean UI to enhance user experience and visibility.</p>
+                    <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                    <span class="open-hint live"><i class='bx bx-check-circle'></i> You're viewing it right now</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATIONS ================= -->
+        <section class="section" id="certifications">
+            <p class="eyebrow reveal" data-scramble>#05 &mdash; Certificates</p>
+            <h2 class="heading reveal">My <span>Certifications</span></h2>
+
+            <div class="filters reveal" id="filters" role="tablist">
+                <button type="button" class="filter active" data-filter="all">All</button>
+                <button type="button" class="filter" data-filter="internship">Internship</button>
+                <button type="button" class="filter" data-filter="conference">Conference</button>
+                <button type="button" class="filter" data-filter="ncc">NCC</button>
+            </div>
+
+            <div class="cert-grid" id="cert-grid"">
+                <article class="cert-card reveal spot tilt" data-cat="internship" data-doc="exlife" tabindex="0" role="button" aria-label="View EXLife internship certificate" style="background-image:C:\Protfolio\WhatsApp Image 2026-10-22 at 7.22.33 PM.jpeg;">
+                    <div class="cert-thumb"><img src="C:\Protfolio\React js.jpeg" alt="EXLife Solutions internship certificate" loading="lazy"><span><i class='bx bx-show'></i> View certificate</span></div>
+                    <!-- <img src="C:\Protfolio\React js.jpeg" alt="EXLife Solutions" > -->
+                    <div class="cert-info">
+                        <h3>React JS Internship</h3>
+                        <p>EXLife Solutions &middot; Jun 17 - Jul 12, 2024</p>
+                        <img src="C:\Protfolio\Exlife solution Internship certificate.pdf" alt="ExLife Solution">
+                    </div>
+                </article>
+
+                <article class="cert-card reveal spot tilt" data-cat="conference" data-doc="iccida" tabindex="0" role="button" aria-label="View ICCIDA'24 certificate">
+                    <div class="cert-thumb"><img src="C:\Protfolio\AI Logo.jpeg" alt="ICCIDA'24 participation certificate" loading="lazy"><span><i class='bx bx-show'></i> View certificate</span></div>
+                    <div class="cert-info">
+                        <h3>ICCIDA'24 - Participation</h3>
+                        <p>International Conference on Computational Intelligence &amp; Data Analytics &middot; 21 - 23 Mar 2024</p>
+                    </div>
+                </article>
+
+                <article class="cert-card reveal spot tilt" data-cat="ncc" data-doc="ncc2022" tabindex="0" role="button" aria-label="View NCC camp certificate 2022">
+                    <div class="cert-thumb"><img src="C:\Protfolio\NCC LOGO 1.jpeg" alt="NCC Annual Training Camp 2022 certificate" loading="lazy"><span><i class='bx bx-show'></i> View certificate</span></div>
+                    <div class="cert-info">
+                        <h3>NCC Annual Training Camp - 2022</h3>
+                        <p>11 (TN) BN NCC, Nagercoil &middot; Kumaracoil &middot; 11 - 20 May 2022</p>
+                    </div>
+                </article>
+
+                <article class="cert-card reveal spot tilt" data-cat="ncc" data-doc="ncc2023" tabindex="0" role="button" aria-label="View NCC camp certificate 2023">
+                    <div class="cert-thumb"><img src="C:\Protfolio\NCC LOGO 2.jpeg" alt="NCC Annual Training Camp 2023 certificate" loading="lazy"><span><i class='bx bx-show'></i> View certificate</span></div>
+                    <div class="cert-info">
+                        <h3>NCC Annual Training Camp - 2023</h3>
+                        <p>11 (TN) BN NCC, Nagercoil &middot; Anjugramam &middot; 22 - 31 Aug 2023</p>
+                        <img src="C:\Protfolio\NCC 2 Camp certificate Rohini clg.pdf" alt="NCC Camp 2">
+                    </div>
+                </article>
+
+                <article class="cert-card reveal spot tilt" data-cat="ncc" data-doc="nccalumni" tabindex="0" role="button" aria-label="View NCC Alumni Association card">
+                    <div class="cert-thumb"><img src="C:\Protfolio\NCC Alumini.jpeg" alt="NCC Alumni Association card" loading="lazy"><span><i class='bx bx-show'></i> View card</span></div>
+                    <div class="cert-info">
+                        <h3>NCC Alumni Association - Life Member</h3>
+                        <p>Kanniyakumari Dist CATC/ATC Camp Senior &middot; 2023</p>
+                        <img src="C:\Protfolio\My NCC Alumini I'd card .pdf" alt="NCC Alumini card">
+                    </div>
+                </article>
+            </div>
+
+            <div class="more-creds reveal">
+                <h3><i class='bx bx-badge-check'></i> More credentials</h3>
+                <ul class="chips">
+                    <li>Front End Development &middot; Alo Info Tech</li>
+                    <li>Cyber Security &amp; Hacker Tactics Awareness &middot; Infosys Springboard</li>
+                    <li>NCC 'A' and 'B' Certificates</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section alt" id="contact">
+            <p class="eyebrow reveal" data-scramble>#06 &mdash; Contact</p>
+            <h2 class="heading reveal">Contact <span>Me</span></h2>
+
+            <div class="contact-wrap">
+                <div class="contact-info reveal">
+                    <h3>Let's work together!</h3>
+                    <p>Looking for a fresh Frontend Developer for your team or project? Send me a message and I'll get back to you.</p>
+                    <a href="tel:+919025807084"><i class='bx bx-phone'></i> +91 90258 07084</a>
+                    <a href="mailto:kapilanthennarasu@gmail.com"><i class='bx bx-envelope'></i> kapilanthennarasu@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/kapilan-t-207b1729a" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i> linkedin.com/in/kapilan-t</a>
+                    <a href="https://wa.me/919025807084" target="_blank" rel="noopener"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form">
+                    <input type="text" id="cf-name" placeholder="Your Name" required>
+                    <input type="email" id="cf-email" placeholder="Your Email" required>
+                    <textarea id="cf-msg" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="pill magnetic">Send message <span class="pill-arrow"><i class='bx bx-right-arrow-alt'></i></span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-big" aria-hidden="true">KAPILAN T</div>
+        <div class="footer-row">
+            <p>&copy; <span id="year"></span> Kapilan T. All rights reserved.</p>
+            <a href="#home" class="to-top" id="to-top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- ================= PROJECT PANELS (full-screen "pages") ================= -->
+    <div class="panel" id="panel-fyp" aria-hidden="true" role="dialog" aria-label="Smart Trolley project">
+        <div class="panel-scroll">
+            <button type="button" class="panel-close" data-close-panel aria-label="Close"><i class='bx bx-x'></i></button>
+            <div class="panel-inner">
+                <span class="badge">Final Year Project &middot; B.E. CSE &middot; May 2025</span>
+                <h2>Smart Trolley with <span>Autocheckout</span> &amp; Theft Detection</h2>
+                <p class="panel-lead">An IoT-enabled shopping trolley that removes the checkout queue: customers scan products as they shop, the bill updates in real time, and a load cell guards against unscanned items.</p>
+
+                <div class="panel-actions">
+                    <button type="button" class="pill magnetic" data-doc="fypreport">View project report <span class="pill-arrow"><i class='bx bx-file'></i></span></button>
+                    <a class="btn-line" href="docs/final-year-project-report.pdf" download><i class='bx bx-download'></i> Download PDF</a>
+                </div>
+
+                <div class="panel-facts">
+                    <div><h4>79</h4><p>Pages in the report</p></div>
+                    <div><h4>4</h4><p>Member team project</p></div>
+                    <div><h4>6</h4><p>Core components</p></div>
+                    <div><h4>May 2025</h4><p>Submitted</p></div>
+                </div>
+
+                <div class="panel-cols">
+                    <div>
+                        <h3>How it works</h3>
+                        <ul class="steps">
+                            <li><b>Scan</b> Each item is scanned with the attached barcode scanner as it goes into the trolley.</li>
+                            <li><b>Bill</b> Price and weight appear instantly on the LCD screen and in the Blynk mobile app, so the bill is always up to date.</li>
+                            <li><b>Guard</b> A load cell tracks weight changes. If something is added without scanning, the buzzer alerts the customer and store staff.</li>
+                            <li><b>Exit</b> After successful payment the trolley unlocks. If payment is incomplete, an alarm prevents it leaving the store.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Built with</h3>
+                        <ul class="chips">
+                            <li>NodeMCU ESP8266</li><li>Barcode Scanner</li><li>Load Cell</li><li>Buzzer</li><li>LCD Display</li><li>Blynk App</li><li>Arduino Uno</li>
+                        </ul>
+                        <h3 class="mt">Why it matters</h3>
+                        <p class="muted">Traditional billing causes delays and inconvenience in busy periods. Automating scanning removes manual counter work, cuts waiting time and reduces theft and billing errors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel" id="panel-iot" aria-hidden="true" role="dialog" aria-label="IoT mini project">
+        <div class="panel-scroll">
+            <button type="button" class="panel-close" data-close-panel aria-label="Close"><i class='bx bx-x'></i></button>
+            <div class="panel-inner">
+                <span class="badge">IoT Mini Project</span>
+                <h2>Temperature &amp; <span>Humidity</span> Monitoring System</h2>
+                <p class="panel-lead">A real-time data acquisition project using an Arduino Uno and a DHT11 sensor, with optional IoT integration for remote monitoring.</p>
+
+                <div class="panel-actions">
+                    <button type="button" class="pill magnetic" data-doc="iotreport">View project document <span class="pill-arrow"><i class='bx bx-file'></i></span></button>
+                    <a class="btn-line" href="docs/iot-mini-project.pdf" download><i class='bx bx-download'></i> Download PDF</a>
+                </div>
+
+                <div class="panel-facts">
+                    <div><h4>6</h4><p>Pages in the document</p></div>
+                    <div><h4>4</h4><p>Member team project</p></div>
+                    <div><h4>2 s</h4><p>Sensor read interval</p></div>
+                    <div><h4>D2</h4><p>DHT11 data pin</p></div>
+                </div>
+
+                <div class="panel-cols">
+                    <div>
+                        <h3>Procedure</h3>
+                        <ul class="steps">
+                            <li><b>Wire</b> Connect DHT11 VCC to 5V, GND to GND and the data pin to digital pin 2 of the Arduino Uno.</li>
+                            <li><b>Code</b> Write the program in the Arduino IDE using the DHT library to read temperature and humidity.</li>
+                            <li><b>Test</b> Upload it and watch the readings on the Serial Monitor.</li>
+                            <li><b>Go IoT</b> Optionally send data over Wi-Fi to ThingSpeak or Blynk and monitor it remotely from a dashboard.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Built with</h3>
+                        <ul class="chips">
+                            <li>Arduino Uno</li><li>DHT11 Sensor</li><li>Breadboard &amp; Jumper Wires</li><li>Arduino IDE</li><li>ThingSpeak / Blynk</li>
+                        </ul>
+                        <h3 class="mt">Result</h3>
+                        <p class="muted">The system reads temperature and humidity from the DHT11 and displays accurate values on the Serial Monitor, for example 25.00 &deg;C and 50.00 % humidity, and can be extended to remote cloud monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= DOCUMENT VIEWER ================= -->
+    <div class="viewer" id="viewer" aria-hidden="true" role="dialog" aria-label="Document viewer">
+        <div class="viewer-backdrop" data-close-viewer></div>
+        <div class="viewer-box">
+            <div class="viewer-bar">
+                <div class="viewer-title">
+                    <small id="viewer-count"></small>
+                    <h3 id="viewer-title">Document</h3>
+                </div>
+                <div class="viewer-actions">
+                    <a id="viewer-open" href="#" target="_blank" rel="noopener" title="Open in new tab"><i class='bx bx-link-external'></i></a>
+                    <a id="viewer-dl" href="#" download title="Download PDF"><i class='bx bx-download'></i></a>
+                    <button type="button" data-close-viewer title="Close (Esc)"><i class='bx bx-x'></i></button>
+                </div>
+            </div>
+            <div class="viewer-body" id="viewer-body"></div>
+            <button type="button" class="viewer-nav prev" id="viewer-prev" aria-label="Previous"><i class='bx bx-chevron-left'></i></button>
+            <button type="button" class="viewer-nav next" id="viewer-next" aria-label="Next"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+
+    <!-- toast -->
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="NO2.js"></script>
+</body>
+</html>
